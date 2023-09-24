@@ -4,61 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Security Guard Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <nav id="navbar">
-            <img src="images/logo.png" alt="Logo">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <img src="assets/images/logo1.png" alt="Logo" class="logo">
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
         <div class="hero">
-            <h1>Your Website Title</h1>
-            <p>Your website description here. You can add more details about your website or company.</p>
-            <button>Contact Us</button>
+            <h1>Security Guard Services</h1>
+            <p>Your website description here. Protecting your assets with top-tier security.</p>
+            <button class="cta-button">Contact Us</button>
         </div>
     </header>
 
     <section id="about">
-        <img src="images/about-image.jpg" alt="About Us">
-        <div>
-            <h2>About Us</h2>
-            <p>About section content here. Describe your company or services in detail.</p>
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="assets/images/logo1.png" alt="About Us">
+            <p>About section content here. With years of experience, we provide the best security services in the region.</p>
         </div>
     </section>
 
     <section id="services">
+        <h2>Our Services</h2>
         <div class="service-card">
-            <img src="images/service1-icon.png" alt="Service 1">
+            <img src="assets/images/logo1.png" alt="Service 1">
             <h3>Service 1</h3>
-            <p>Service 1 description.</p>
+            <p>Service 1 description. Reliable and efficient security for your events.</p>
         </div>
         <div class="service-card">
-            <img src="images/service2-icon.png" alt="Service 2">
+            <img src="assets/images/logo1.png" alt="Service 2">
             <h3>Service 2</h3>
-            <p>Service 2 description.</p>
+            <p>Service 2 description. 24/7 surveillance for your premises.</p>
         </div>
         <div class="service-card">
-            <img src="images/service3-icon.png" alt="Service 3">
+            <img src="assets/images/logo1.png" alt="Service 3">
             <h3>Service 3</h3>
-            <p>Service 3 description.</p>
+            <p>Service 3 description. Personal bodyguard services for VIPs.</p>
         </div>
     </section>
 
     <section id="testimonials">
         <h2>What Our Clients Say</h2>
         <div class="testimonial">
-            <img src="images/client1.jpg" alt="Client 1">
+            <img src="assets/images/logo1.png" alt="Client 1">
             <p>"This company provided excellent service for our event. Highly recommended!"</p>
             <span>- John Doe</span>
         </div>
         <div class="testimonial">
-            <img src="images/client2.jpg" alt="Client 2">
+            <img src="assets/images/logo1.png" alt="Client 2">
             <p>"Professional and reliable. A+ service."</p>
             <span>- Jane Smith</span>
         </div>
@@ -67,31 +70,26 @@
     <section id="cta">
         <h2>Ready to Secure Your Business?</h2>
         <p>Contact us now and get a free consultation!</p>
-        <button>Contact Us</button>
+        <button class="cta-button">Contact Us</button>
     </section>
 
     <section id="contact">
         <h2>Get in Touch</h2>
-        <p>If you have any questions, please contact us.</p>
         <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Company Name. All rights reserved.</p>
-            <ul>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
+        <div class="footer-content">
+            <p>&copy; 2023 Security Guard Services. All rights reserved.</p>
             <div class="social-media">
-                <a href="#"><img src="path-to-facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="path-to-linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
             </div>
         </div>
     </footer>
