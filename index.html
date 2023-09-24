@@ -1,102 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-#navbar {
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-#navbar a {
-    color: #f1c40f;
-    text-decoration: none;
-    margin: 0 10px;
-}
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="images/logo.png" alt="Logo">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="hero">
+            <h1>Your Website Title</h1>
+            <p>Your website description here. You can add more details about your website or company.</p>
+            <button>Contact Us</button>
+        </div>
+    </header>
 
-#navbar a.active {
-    border-bottom: 2px solid #f1c40f;
-}
+    <section id="about">
+        <img src="images/about-image.jpg" alt="About Us">
+        <div>
+            <h2>About Us</h2>
+            <p>About section content here. Describe your company or services in detail.</p>
+        </div>
+    </section>
 
-.hero {
-    background-image: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px 0;
-}
+    <section id="services">
+        <div class="service-card">
+            <img src="images/service1-icon.png" alt="Service 1">
+            <h3>Service 1</h3>
+            <p>Service 1 description.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/service2-icon.png" alt="Service 2">
+            <h3>Service 2</h3>
+            <p>Service 2 description.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/service3-icon.png" alt="Service 3">
+            <h3>Service 3</h3>
+            <p>Service 3 description.</p>
+        </div>
+    </section>
 
-#about img {
-    max-width: 50%;
-    float: left;
-    margin-right: 20px;
-}
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <img src="images/client1.jpg" alt="Client 1">
+            <p>"This company provided excellent service for our event. Highly recommended!"</p>
+            <span>- John Doe</span>
+        </div>
+        <div class="testimonial">
+            <img src="images/client2.jpg" alt="Client 2">
+            <p>"Professional and reliable. A+ service."</p>
+            <span>- Jane Smith</span>
+        </div>
+    </section>
 
-.service-card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
+    <section id="cta">
+        <h2>Ready to Secure Your Business?</h2>
+        <p>Contact us now and get a free consultation!</p>
+        <button>Contact Us</button>
+    </section>
 
-.service-card img {
-    max-width: 50px;
-    margin-right: 20px;
-}
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, please contact us.</p>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-#testimonials .testimonial img {
-    max-width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><img src="path-to-facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="path-to-linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
 
-#cta {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
+    <script src="scripts.js"></script>
+</body>
 
-#cta button {
-    background-color: #f1c40f;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #f1c40f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-footer a {
-    color: #f1c40f;
-    text-decoration: none;
-}
-
-.social-media img {
-    width: 24px;
-    margin-right: 10px;
-}
+</html>
