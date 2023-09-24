@@ -27,11 +27,12 @@ body {
 }
 
 .hero {
-    background-image: url('images/hero-bg.jpg');
+    background-image: url('assets/images/background.jpg');  /* Replace with your actual image URL */
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 150px 0;
+    color: #ecf0f1;
 }
 
 #about img {
