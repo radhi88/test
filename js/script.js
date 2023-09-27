@@ -1,4 +1,4 @@
-const navbarLinks = document.querySelectorAll("#navbar a");
+const navbarLinks = document.querySelectorAll(".nav-links a");
 const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", () => {
