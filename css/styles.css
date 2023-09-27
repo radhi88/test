@@ -149,7 +149,7 @@ footer {
 .language-switcher {
     position: absolute;
     top: 10px;
-    right: 10px; /* For English version */
+    right: 20px; /* For English version */
     font-size: 1rem;
 }
 
