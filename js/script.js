@@ -24,3 +24,14 @@ ctaButton.addEventListener("click", function() {
     const contactSection = document.getElementById("contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    var langSwitcher = document.querySelector('.language-switcher');
+    
+    if (window.location.href.indexOf("index-ar.html") > -1) {
+        // If on Arabic page, show English link
+        langSwitcher.innerHTML = '<a href="index.html">En</a>';
+    } else {
+        // If on English page, show Arabic link
+        langSwitcher.innerHTML = '<a href="index-ar.html">اللغة العربية</a>';
+    }
+});
