@@ -1,0 +1,54 @@
+/* styles-en.css */
+
+/* English-specific styles */
+
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 20px; /* Positioned to the right for LTR */
+    font-size: 1rem;
+}
+
+.language-switcher a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
+
+/* Service Buttons inspired by musaned.com.sa */
+.service-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover {
+    background-color: #34495e;
+}
+
+.service-button img {
+    width: 40px; /* Adjust as needed */
+}
+
+.service-button span {
+    font-weight: bold;
+}
+
+.service-button-description {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* ... any other English-specific styles ... */
