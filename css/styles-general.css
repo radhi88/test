@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1rem;
+}
+
+.language-switcher a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
+
+/* Logo and Navigation */
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #34495e;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('assets/images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+    color: #ecf0f1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* Service Button Styles */
+.StepButton_stepBtn__1x-q1 {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.StepButton_stepBtn__1x-q1:hover {
+    background-color: #f5f5f5;
+}
+
+.StepButton_picture__38toF {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.StepButton_text__3GJbv {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.StepButton_arrow__1JtU5 {
+    width: 15px;
+    height: 9px;
+}
+
+/* Service Buttons */
+.PreferencesProcedure_recruitment__25M17 {
+    display: flex;
+    gap: 20px;
+}
+
+.RecruitmentButton_root__5vZEY {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.RecruitmentButton_root__5vZEY:hover {
+    background-color: #f5f5f5;
+}
+
+.RecruitmentButton_content__S-vU_ {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.RecruitmentButton_text__2_j3- {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.RecruitmentButton_description__2zSi1 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Adjustments for RTL layout */
+.service-card, .testimonial {
+    flex-direction: row-reverse;
+}
