@@ -171,3 +171,15 @@ header {
 .service-card, .testimonial {
     flex-direction: row-reverse;
 }
+/* styles-en.css */
+
+/* English-specific styles go here. */
+
+/* Example: If you ever need to adjust typography or any other specific styles for the English version, you can add them here. */
+
+/* For now, this file might remain relatively empty since most of the general styles are covered in styles-general.css. However, having this file provides flexibility for future English-specific adjustments. */
+
+/* Placeholder for potential future styles */
+.en-specific-class {
+    /* English-specific styling */
+}
