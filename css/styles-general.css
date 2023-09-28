@@ -183,3 +183,19 @@ header {
 .en-specific-class {
     /* English-specific styling */
 }
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between the service cards as needed */
+}
+
+.service-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3, .service-card h4 {
+    margin-top: 0;
+}
