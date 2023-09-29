@@ -125,3 +125,19 @@ header {
     width: 100%;
     border-radius: 15px;
 }
+/* For the service cards */
+.service-card {
+    /* ... existing styles ... */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the content horizontally */
+}
+
+/* For the testimonial cards */
+.testimonial {
+    /* ... existing styles ... */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the content horizontally */
+    justify-content: center; /* This will center the content vertically */
+}
