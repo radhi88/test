@@ -94,99 +94,11 @@ header {
     background-color: #c0392b;
 }
 
-/* Service Button Styles */
-.StepButton_stepBtn__1x-q1 {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.StepButton_stepBtn__1x-q1:hover {
-    background-color: #f5f5f5;
-}
-
-.StepButton_picture__38toF {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.StepButton_text__3GJbv {
-    font-family: 'Tajawal', sans-serif;
-    font-weight: 500;
-    margin-right: 10px;
-}
-
-.StepButton_arrow__1JtU5 {
-    width: 15px;
-    height: 9px;
-}
-
-/* Service Buttons */
-.PreferencesProcedure_recruitment__25M17 {
-    display: flex;
-    gap: 20px;
-}
-
-.RecruitmentButton_root__5vZEY {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.RecruitmentButton_root__5vZEY:hover {
-    background-color: #f5f5f5;
-}
-
-.RecruitmentButton_content__S-vU_ {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 10px;
-}
-
-.RecruitmentButton_text__2_j3- {
-    font-family: 'Tajawal', sans-serif;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.RecruitmentButton_description__2zSi1 {
-    font-family: 'Tajawal', sans-serif;
-    font-weight: 400;
-    color: #777;
-}
-
-/* Adjustments for RTL layout */
-.service-card, .testimonial {
-    flex-direction: row-reverse;
-}
-/* styles-en.css */
-
-/* English-specific styles go here. */
-
-/* Example: If you ever need to adjust typography or any other specific styles for the English version, you can add them here. */
-
-/* For now, this file might remain relatively empty since most of the general styles are covered in styles-general.css. However, having this file provides flexibility for future English-specific adjustments. */
-
-/* Placeholder for potential future styles */
-.en-specific-class {
-    /* English-specific styling */
-}
+/* Services Section */
 .services-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Adjust the gap between the service cards as needed */
+    gap: 20px;
 }
 
 .service-card {
@@ -199,10 +111,36 @@ header {
 .service-card h3, .service-card h4 {
     margin-top: 0;
 }
+
 .service-card img {
-    width: 150px;  /* Adjust this value as per your requirement */
-    height: 150px; /* Adjust this value as per your requirement */
-    object-fit: cover; /* This will make sure the image covers the width and height without distortion */
-    display: block; /* Ensures there are no extra spaces around the image */
-    margin: 0 auto; /* Centers the image within its container */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Testimonials Section */
+#testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial {
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
 }
