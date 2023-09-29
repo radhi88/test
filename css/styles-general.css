@@ -199,3 +199,9 @@ header {
 .service-card h3, .service-card h4 {
     margin-top: 0;
 }
+.service-card img {
+    width: 150px;  /* Adjust this value as per your requirement */
+    height: 150px; /* Adjust this value as per your requirement */
+    object-fit: cover; /* This will make sure the image covers the width and height without distortion */
+    border-radius: 50%; /* Optional: This will make the images circular */
+}
