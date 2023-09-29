@@ -1,11 +1,12 @@
 body {
     font-family: 'Tajawal', sans-serif;
-    line-height: 1.6;
+    line-height: 1.8; /* Increased for better readability */
     color: #333;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -20,96 +21,107 @@ header {
 
 .language-switcher, .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 25px; /* Increased gap for better spacing */
 }
 
 .language-switcher a, .nav-links a {
     color: #ecf0f1;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 18px; /* Increased padding for a more clickable area */
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Added transform for hover effect */
 }
 
 .nav-links a:hover, .nav-links a.active {
     background-color: #34495e;
+    transform: translateY(-3px); /* Slight lift effect on hover */
 }
 
 .logo {
-    height: 50px;  /* Adjust as required */
+    height: 60px; /* Slightly increased for prominence */
 }
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 100px 0;
+    padding: 120px 0; /* Increased padding for better spacing */
     background-color: #34495e;
     color: #ecf0f1;
-    margin-top: 80px;  /* To account for fixed header */
+    margin-top: 90px; /* Increased to account for the fixed header */
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-weight: 700; /* Bold for a prominent heading */
+    font-size: 3.5rem; /* Slightly increased for prominence */
+    margin-bottom: 25px; /* Increased spacing */
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    font-size: 1.6rem; /* Slightly increased for better readability */
+    margin-bottom: 50px; /* Increased spacing */
     text-align: center;
+    font-weight: 400; /* Regular weight for contrast */
 }
 
 .cta-button {
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 50px;  /* Rounded button */
-    transition: transform 0.3s;
+    background-color: #e53935; /* Adjusted red for a modern touch */
+    color: #ecf0f1;
+    border: none;
+    padding: 17px 35px; /* Increased padding */
+    font-size: 1.2rem; /* Slightly increased font size */
+    border-radius: 50px;
+    transition: transform 0.3s, background-color 0.3s; /* Added background-color for hover effect */
 }
 
 .cta-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.08); /* Slight growth effect on hover */
+    background-color: #d32f2f; /* Darker shade on hover */
 }
+
 #about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 5%;
-    gap: 40px;
+    padding: 90px 5%; /* Increased padding for better spacing */
+    gap: 50px; /* Increased gap */
 }
 
 #about img {
     width: 45%;
-    border-radius: 10px;
+    border-radius: 15px; /* Increased for a more rounded look */
 }
 
 #about p {
     width: 45%;
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.3rem; /* Slightly increased for better readability */
+    line-height: 2; /* Increased for better readability */
 }
+
 #services {
-    padding: 80px 5%;
+    padding: 90px 5%; /* Increased padding for better spacing */
     background-color: #f9f9f9;
 }
 
 .service-card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 30px;
+    gap: 25px; /* Increased gap for better spacing */
+    padding: 35px; /* Increased padding */
     background-color: #fff;
     border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    transition: box-shadow 0.3s;
+    border-radius: 15px; /* Increased for a more rounded look */
+    transition: box-shadow 0.3s, transform 0.3s; /* Added transform for hover effect */
 }
 
 .service-card:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12); /* Slightly stronger shadow */
+    transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
 .service-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px; /* Consistent with the card border radius */
 }
