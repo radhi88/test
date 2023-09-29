@@ -203,5 +203,6 @@ header {
     width: 150px;  /* Adjust this value as per your requirement */
     height: 150px; /* Adjust this value as per your requirement */
     object-fit: cover; /* This will make sure the image covers the width and height without distortion */
-    border-radius: 50%; /* Optional: This will make the images circular */
+    display: block; /* Ensures there are no extra spaces around the image */
+    margin: 0 auto; /* Centers the image within its container */
 }
