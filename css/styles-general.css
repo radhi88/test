@@ -1,71 +1,53 @@
-/* General Styles */
 body {
     font-family: 'Tajawal', sans-serif;
+    line-height: 1.6;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #f9f9f9;
 }
-
 header {
-    background-color: #2c3e50;
-    padding: 20px 0;
-    position: relative;
-}
-
-/* Language Switcher */
-.language-switcher {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    font-size: 1rem;
-}
-
-.language-switcher a {
-    margin: 0 5px;
-    text-decoration: none;
-    color: #ecf0f1;
-}
-
-.language-switcher a:hover {
-    text-decoration: underline;
-}
-
-/* Logo and Navigation */
-.logo {
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-}
-
-.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #2c3e50;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav-links a {
+.language-switcher, .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.language-switcher a, .nav-links a {
     color: #ecf0f1;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover, .nav-links a.active {
     background-color: #34495e;
 }
 
-/* Hero Section */
+.logo {
+    height: 50px;  /* Adjust as required */
+}
 .hero {
-    background-image: url('assets/images/header-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 100px 0;
+    background-color: #34495e;
     color: #ecf0f1;
+    margin-top: 80px;  /* To account for fixed header */
 }
 
 .hero h1 {
@@ -75,122 +57,59 @@ header {
 
 .hero p {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-/* CTA Button */
 .cta-button {
-    background-color: #e74c3c;
-    color: #ecf0f1;
-    border: none;
     padding: 15px 30px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    border-radius: 50px;  /* Rounded button */
+    transition: transform 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    transform: scale(1.05);
 }
-
-/* Services Section */
-.services-container {
+#about {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    padding: 80px 5%;
+    gap: 40px;
+}
+
+#about img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+#about p {
+    width: 45%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+#services {
+    padding: 80px 5%;
+    background-color: #f9f9f9;
 }
 
 .service-card {
-    flex: 1;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
 }
 
-.service-card h3, .service-card h4 {
-    margin-top: 0;
+.service-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Testimonials Section */
-.testimonial p {
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-.testimonial span {
-    display: block;
-    text-align: right;
-    margin-top: 10px;
-    font-weight: bold;
-}
-#contact {
-    padding: 50px 0;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#contact form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-#contact input, #contact textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #34495e;
-    color: #ecf0f1;
+    border-radius: 10px;
 }
-
-#contact textarea {
-    height: 150px;
-    resize: none;
-}
-
-#contact button {
-    display: block;
-    width: 100%;
-    background-color: #e74c3c;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#contact button:hover {
-    background-color: #c0392b;
-}
-footer {
-    padding: 20px 0;
-    background-color: #34495e;
-}
-
-.footer-content {
-    text-align: center;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-media a {
-    margin: 0 5px;
-}
-
